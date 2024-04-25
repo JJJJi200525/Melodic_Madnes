@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8474603441782837873}
   - component: {fileID: 7453153462611199824}
   m_Layer: 0
-  m_Name: 1-exp
+  m_Name: 50-exp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.19999999, g: 0.77254903, b: 0.41517752, a: 1}
+  m_Color: {r: 0.19999999, g: 0.6353146, b: 0.77254903, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c8cb80ec976a444d9390fdf996229bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  experienceGranted: 100
+  experienceGranted: 50
 --- !u!50 &7453153462611199824
 Rigidbody2D:
   serializedVersion: 4

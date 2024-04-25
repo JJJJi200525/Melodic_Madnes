@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6428148176741990090}
-  - component: {fileID: 4627585144449807175}
   - component: {fileID: 7749454837305644505}
   - component: {fileID: 7415338341561761949}
   - component: {fileID: -1537004650860408241}
+  - component: {fileID: 459690881017486256}
   m_Layer: 0
-  m_Name: Basic Enemy
+  m_Name: Triangle
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,8 +36,53 @@ Transform:
   - {fileID: 4504108054776729515}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &4627585144449807175
-BoxCollider2D:
+--- !u!114 &7749454837305644505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2324684385643041800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2d2b4f2cddf214a803e94f48d24241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7415338341561761949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2324684385643041800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d92222ecdc8abf4bb3f2a42185a07cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 0aab724e6ad6b784ba11f254bb426f9c, type: 2}
+  currentMoveSpeed: 0
+  currentHealth: 0
+  currentDamage: 0
+  despawnDistance: 20
+--- !u!114 &-1537004650860408241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2324684385643041800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c11a34b50a20d041b8a6e3c68c14188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: 1-exp
+    itemPrefab: {fileID: 2951788700530489755, guid: 11c316a935b44c540bdf855e3655bc91, type: 3}
+    dropRate: 100
+--- !u!60 &459690881017486256
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -78,53 +123,14 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
-  m_EdgeRadius: 0
---- !u!114 &7749454837305644505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2324684385643041800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e2d2b4f2cddf214a803e94f48d24241, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7415338341561761949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2324684385643041800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d92222ecdc8abf4bb3f2a42185a07cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 0aab724e6ad6b784ba11f254bb426f9c, type: 2}
-  currentMoveSpeed: 0
-  currentHealth: 0
-  currentDamage: 0
---- !u!114 &-1537004650860408241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2324684385643041800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c11a34b50a20d041b8a6e3c68c14188, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  drops:
-  - name: 1-exp
-    itemPrefab: {fileID: 2951788700530489755, guid: 11c316a935b44c540bdf855e3655bc91, type: 3}
-    dropRate: 100
+  m_Points:
+    m_Paths:
+    - - {x: -0.00867489, y: 0.54890454}
+      - {x: -0.5693604, y: -0.033642054}
+      - {x: -0.5313981, y: -0.10634899}
+      - {x: 0.25380123, y: -0.09333664}
+      - {x: 0.3915246, y: 0.09648174}
+  m_UseDelaunayMesh: 0
 --- !u!1 &4969426779919406513
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +204,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fb75c852d0b14e24499d3dbac2183c72, type: 3}
   m_Color: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6428148176741990090}
-  - component: {fileID: 4627585144449807175}
   - component: {fileID: 7749454837305644505}
   - component: {fileID: 7415338341561761949}
   - component: {fileID: -1537004650860408241}
+  - component: {fileID: 2127885499281054355}
   m_Layer: 0
   m_Name: Cow bell
   m_TagString: Enemy
@@ -36,8 +36,56 @@ Transform:
   - {fileID: 4504108054776729515}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &4627585144449807175
-BoxCollider2D:
+--- !u!114 &7749454837305644505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2324684385643041800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2d2b4f2cddf214a803e94f48d24241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7415338341561761949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2324684385643041800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d92222ecdc8abf4bb3f2a42185a07cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 66b25705664514641a826a2f86e6c9c5, type: 2}
+  currentMoveSpeed: 0
+  currentHealth: 0
+  currentDamage: 0
+  despawnDistance: 20
+--- !u!114 &-1537004650860408241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2324684385643041800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c11a34b50a20d041b8a6e3c68c14188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: 10
+    itemPrefab: {fileID: 2951788700530489755, guid: 11c316a935b44c540bdf855e3655bc91, type: 3}
+    dropRate: 40
+  - name: 50
+    itemPrefab: {fileID: 2951788700530489755, guid: 8b433f7255aeb3546b55037b62046dcf, type: 3}
+    dropRate: 60
+--- !u!60 &2127885499281054355
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -78,53 +126,18 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
-  m_EdgeRadius: 0
---- !u!114 &7749454837305644505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2324684385643041800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e2d2b4f2cddf214a803e94f48d24241, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7415338341561761949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2324684385643041800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d92222ecdc8abf4bb3f2a42185a07cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 66b25705664514641a826a2f86e6c9c5, type: 2}
-  currentMoveSpeed: 0
-  currentHealth: 0
-  currentDamage: 0
---- !u!114 &-1537004650860408241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2324684385643041800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c11a34b50a20d041b8a6e3c68c14188, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  drops:
-  - name: 1-exp
-    itemPrefab: {fileID: 2951788700530489755, guid: 11c316a935b44c540bdf855e3655bc91, type: 3}
-    dropRate: 100
+  m_Points:
+    m_Paths:
+    - - {x: -0.20230547, y: 0.27226216}
+      - {x: -0.32728124, y: 0.16571721}
+      - {x: -0.3889304, y: -0.22983429}
+      - {x: -0.37424058, y: -0.3678787}
+      - {x: -0.21224864, y: -0.43212953}
+      - {x: 0.102867275, y: -0.43433908}
+      - {x: 0.17755479, y: -0.39878637}
+      - {x: 0.11474919, y: 0.1347324}
+      - {x: 0.001344651, y: 0.26125056}
+  m_UseDelaunayMesh: 0
 --- !u!1 &4969426779919406513
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +211,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f6d61ee57b95f74bb3fab6a0485f8f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
