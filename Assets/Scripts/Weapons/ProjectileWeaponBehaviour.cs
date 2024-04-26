@@ -11,7 +11,7 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
     public float destroyAfterSeconds;
 
     //Curretn stats
-    protected float currentDamage;
+    public float currentDamage;
     protected float currentSpeed;
     protected float currentCooldownDuration;
     protected float currentPierce;

@@ -47,7 +47,7 @@ public class HUDController : MonoBehaviour
     {
         if (levelText != null)
         {
-            levelText.text = "Level: " + playerStats.experience + " / " + playerStats.experienceCap;
+            levelText.text = "Level: " + playerStats.level + '\n' +playerStats.experience + " / " + playerStats.experienceCap;
         }
     }
 }

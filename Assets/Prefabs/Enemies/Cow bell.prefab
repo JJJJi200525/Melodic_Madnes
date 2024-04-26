@@ -43,7 +43,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2324684385643041800}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e2d2b4f2cddf214a803e94f48d24241, type: 3}
   m_Name: 
@@ -128,15 +128,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.20230547, y: 0.27226216}
-      - {x: -0.32728124, y: 0.16571721}
-      - {x: -0.3889304, y: -0.22983429}
-      - {x: -0.37424058, y: -0.3678787}
-      - {x: -0.21224864, y: -0.43212953}
-      - {x: 0.102867275, y: -0.43433908}
-      - {x: 0.17755479, y: -0.39878637}
-      - {x: 0.11474919, y: 0.1347324}
-      - {x: 0.001344651, y: 0.26125056}
+    - - {x: -0.085418515, y: 0.51466763}
+      - {x: -0.40360165, y: 0.44102737}
+      - {x: -0.45965746, y: -0.4129859}
+      - {x: 0.18398887, y: -0.47122565}
+      - {x: 0.14346354, y: 0.39055294}
   m_UseDelaunayMesh: 0
 --- !u!1 &4969426779919406513
 GameObject:
@@ -148,6 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4504108054776729515}
   - component: {fileID: 715588338969468444}
+  - component: {fileID: 4835565204538179336}
   m_Layer: 0
   m_Name: Cowbell
   m_TagString: Untagged
@@ -211,7 +208,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8f6d61ee57b95f74bb3fab6a0485f8f8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 073f472cb2d6d2f4e91d302485f78e3e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -222,3 +219,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4835565204538179336
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4969426779919406513}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3fd0ae1568db80c4ab1d5b00db03ff20, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

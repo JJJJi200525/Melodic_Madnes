@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2139350098, guid: cca8256b6837c734488979cb05f3d6e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7ea8e4c182126e64d9d0121555d15752, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,6 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponData: {fileID: 11400000, guid: d64ee4f6c1372da41822d2b29a084a23, type: 2}
   destroyAfterSeconds: 1
+  currentDamage: 0
 --- !u!60 &2598352660732608382
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -138,7 +139,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.65625, y: 0.75}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 0.65625, y: 0.75}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -146,13 +147,21 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.40979373, y: 0.40766332}
-      - {x: -0.26447353, y: -0.14305192}
-      - {x: -0.20439118, y: -0.20765102}
-      - {x: -0.13780697, y: -0.2717443}
-      - {x: 0.16946955, y: 0.11839206}
-      - {x: 0.2765031, y: 0.24722385}
-      - {x: 0.31205183, y: 0.2900124}
+    - - {x: 0.20038526, y: 0.6439904}
+      - {x: 0.0043756515, y: 0.6719229}
+      - {x: 0.2316821, y: -0.13995185}
+      - {x: -0.022428617, y: -0.16194704}
+      - {x: -0.16641898, y: -0.27790847}
+      - {x: -0.18038528, y: -0.44831786}
+      - {x: -0.046659797, y: -0.61805296}
+      - {x: 0.34973502, y: -0.5143034}
+      - {x: 0.44009632, y: 0.35134506}
+      - {x: 0.4444238, y: 0.35543174}
+      - {x: 0.38057798, y: 0.6196629}
+    - - {x: 0.32, y: 0.45999998}
+      - {x: 0.23012045, y: 0.43800488}
+      - {x: 0.40413484, y: 0.41192296}
+      - {x: 0.35012037, y: 0.43396628}
   m_UseDelaunayMesh: 0
 --- !u!50 &5956096103044463654
 Rigidbody2D:
@@ -206,13 +215,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5137122220727086774}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.38268343, w: 0.92387956}
+  m_LocalRotation: {x: 0, y: 0, z: 0.16504757, w: 0.9862857}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.175, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7240652612012688763}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 19}
 --- !u!212 &638490076712698212
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -254,8 +263,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 73e120ca32c5f9849963ad04681d314f, type: 3}
+  m_Color: {r: 0.08018869, g: 1, b: 0.98216873, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

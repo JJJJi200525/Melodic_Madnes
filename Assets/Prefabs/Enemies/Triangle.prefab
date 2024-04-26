@@ -43,7 +43,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2324684385643041800}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e2d2b4f2cddf214a803e94f48d24241, type: 3}
   m_Name: 
@@ -125,11 +125,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.00867489, y: 0.54890454}
-      - {x: -0.5693604, y: -0.033642054}
-      - {x: -0.5313981, y: -0.10634899}
-      - {x: 0.25380123, y: -0.09333664}
-      - {x: 0.3915246, y: 0.09648174}
+    - - {x: -0.5262781, y: 0.73938245}
+      - {x: -0.5610787, y: 0.4052854}
+      - {x: -0.6556229, y: 0.042720735}
+      - {x: 0.48982826, y: 0.035028934}
+      - {x: 0.4743411, y: 0.7424505}
   m_UseDelaunayMesh: 0
 --- !u!1 &4969426779919406513
 GameObject:
@@ -141,8 +141,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4504108054776729515}
   - component: {fileID: 715588338969468444}
+  - component: {fileID: 8350334286886695605}
   m_Layer: 0
-  m_Name: Cowbell
+  m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -204,7 +205,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fb75c852d0b14e24499d3dbac2183c72, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bc33571a3500df2489a9caad349a3b1a, type: 3}
   m_Color: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -215,3 +216,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &8350334286886695605
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4969426779919406513}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3029b1b4504f23c469ceb66276e905d1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
