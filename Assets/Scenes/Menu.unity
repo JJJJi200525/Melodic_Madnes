@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 782342cf7143d924684f80beef3adbae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelname: Tutorial
 --- !u!4 &71508407
 Transform:
   m_ObjectHideFlags: 0
